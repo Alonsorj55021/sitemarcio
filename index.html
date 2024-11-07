@@ -26,7 +26,7 @@
         </div>
         <nav>
             <div class="container">
-                <ul>
+                <ul id="links">
                     <li>
                         <a href="#">Início</a>
                     </li>
@@ -141,37 +141,38 @@
             </div>
         </div>    
     </section>
-    <section>
-        <div class="container-form">
-            <h2>Entre em Contato</h2>
-            <form>
-                <div class="form-campo">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome">
-                </div>
-                <div class="form-campo">
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone">
-                </div>
-                <div class="form-campo">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email">
-                </div>
-                <div class="form-campo">
-                    <label for="text">Bairro</label>
-                    <input type="text" id="bairro">
-                </div>
-                <div class="form-campo">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem"></textarea>
-                </div>
-                <button id="button-form" type="submit">Enviar</button>
-            </form>
+     <footer>
+        <div class="container container-flex">
+            <p>
+            2024 &copy; Vereador Marcio Santos - O vereador do Povo
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="https://www.facebook.com/marciooriginal/" target="_blank">
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>                        
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/marciosantosrio/" target="_blank">
+                        <img src="./icones/instagram.png" alt="instagram">
+                    </a>                        
+                </li>
+                <li>
+                    <a href="https://youtu.be/hzoYkNDRLYc?si=bzT5JstR-CrMhESY" target="_blank">
+                        <img src="./icones/youtube.png" alt="youtube">
+                    </a>                        
+                </li>
+            </ul>
         </div>
-    </section>
+    </footer>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/messages_pt_BR.min.js"></script>
 <script>
     $(document).ready(function(){
         $('#carousel-imagens').slick({
@@ -180,6 +181,22 @@
 
         $('.menu-hamburguer').click(function() {
             $('nav').slideToggle();
+        })
+
+        $('#telefone').mask('(00) 00000-0000')
+
+        $('form').validate({
+            rules: {
+                nome: {
+                    required: true
+                },
+                email: {
+                    required: true
+                },
+                telefone: {
+                    required: true
+                }
+            }
         })
     })
 </script>

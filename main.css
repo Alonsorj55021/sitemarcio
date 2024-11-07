@@ -19,6 +19,7 @@ html {
     margin: 0 auto;
 }
 
+
 header {
     position: sticky;
     top: 0;
@@ -73,6 +74,7 @@ nav li{
 }
 
 .sobre {
+    margin-bottom: 32px;
     display: inline-flex;
     padding: 30px;
     background-color: #c3e6fa;
@@ -159,7 +161,7 @@ nav li a{
 }
 
 form {
-    max-width: 800px;
+    max-width: 600px;
 }
 
 #button-form {
@@ -176,4 +178,24 @@ form {
     font-style: italic;
     cursor: pointer;
     border-radius: 10px; 
+}
+
+footer {
+    background-color: #082c72;
+    color: #fff;
+
+}
+
+footer li {
+    list-style: none;
+    margin: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
 }
