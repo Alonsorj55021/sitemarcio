@@ -6,7 +6,7 @@
 }
 
 .logo {
-    max-width: 15%;
+    max-width: 13%;
 }
 
 html {
@@ -53,7 +53,7 @@ nav li{
 .realizacoes {
     width: 335px;
     padding: 60px 0;
-    margin: 30px;
+    margin: 70px;
     margin-inline: 67px;
     border-radius: 20px;
     background: #082c72;
@@ -62,7 +62,7 @@ nav li{
 }
 
 .realizacoes h1 {
-        font-size: 45px;
+    font-size: 45px;
     font-weight: bold;
     text-align: center;
     color: #fff;
@@ -74,15 +74,16 @@ nav li{
 }
 
 .sobre {
-    margin-bottom: 32px;
+    margin-bottom: 60px; 
     display: inline-flex;
-    padding: 30px;
-    background-color: #c3e6fa;
+    padding: 60px;
+    background-color: #dceef8;
 }
 
 .sobre iframe {
+    border-radius: 20px;
     width: 780px;
-    height: 307px;
+    height: 300px;
 }
 
 #sobre-texto {
