@@ -65,7 +65,7 @@ nav li{
     font-size: 45px;
     font-weight: bold;
     text-align: center;
-    color: #fff;
+    color:#ffffff;
 }
 .realizacoes h2 {
     color: #fff;
@@ -87,8 +87,9 @@ nav li{
 }
 
 #sobre-texto {
+    padding: 0 30px;
     text-align: justify;
-    padding-left: 20px;
+    padding-left: 35px;
     width: fit-content;    
 }
 
@@ -109,7 +110,7 @@ nav li{
 }
 
 .sobre h1 {
-    font-size: 30px;
+    font-size: 40px;
     color: #082c72;
 }
 
