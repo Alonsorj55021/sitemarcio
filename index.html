@@ -138,27 +138,51 @@
 
 </section>
 
+<section>
+    <div class="contato">
+        <h2>Entre em contato</h2>
+        <br>
+        <form>
+            <div class="form-campo">
+                <label for="Nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="form-campo">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone">
+            </div>
+            <div class="form-campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-campo">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro">
+            </div>
+            <div class="form-campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#banner').slick({
-                autoplay:true
-            });
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
 
-            $('.menu-hamburguer').click(function() {
-                $('nav').slideToggle();
-            })
-        })
-    </script>
     <footer>
         <div class="interface">
             <section class="line-footer1">
                 <h2>Quer receber notícias sobre o noso mandato?</h2>
                 <p>Inscreva-se em nossa Newsletter e fique por dentro de tudo o que rola em nosso mandato</p>
                 <form action="">
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="cadastrar">
                     <input type="submit" value="Cadastrar">
                 </form>
             </section>
