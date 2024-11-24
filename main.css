@@ -1,0 +1,77 @@
+bode {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+}
+
+.container h1 {
+    font-size: 35px;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #000000;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+color: #ffffff;
+
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-toggler{
+    background-color: #fff;
+}
+
+.section-title {
+   font-family: 'Montserrat', sans-serif;
+}
+
+.section-title span {
+    color: #3a3a3a;
+}
+
+#sobre-o-restaurante, #cardapio {
+    background-color: #c7c7c7;
+}
+
+
+.text-colored {
+    color: #000000;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #ffffff;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+
+@media (max-widht: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+
+
